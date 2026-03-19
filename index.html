@@ -1,1 +1,77 @@
-<h1>Ciao Mondo</h1>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Moderno | Senior Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { background-color: #020617; color: #f8fafc; overflow-x: hidden; }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #2dd4bf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .project-card:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 px-8 py-6 flex justify-between items-center backdrop-blur-md border-b border-slate-800">
+        <div class="font-bold text-xl tracking-tighter text-blue-500">JS.LOG</div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
+            <a href="#progetti" class="hover:text-blue-400 transition">Progetti</a>
+            <a href="#contatti" class="hover:text-blue-400 transition">Contatti</a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex flex-col justify-center items-center text-center px-6">
+        <div data-aos="fade-up">
+            <h1 class="text-6xl md:text-8xl font-bold tracking-tighter mb-4">
+                Design <span class="gradient-text">Systems</span>
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+                Senior Full-Stack Engineer con 20+ anni di esperienza. 
+                Sviluppo soluzioni scalabili e interfacce ad alto impatto.
+            </p>
+            <a href="#progetti" class="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-blue-500 hover:text-white transition-all">
+                Guarda il mio lavoro
+            </a>
+        </div>
+    </section>
+
+    <section id="progetti" class="py-20 px-8 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold mb-16" data-aos="fade-right">Progetti Selezionati</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="project-card bg-slate-900 rounded-3xl overflow-hidden border border-slate-800" data-aos="zoom-in">
+                <div class="h-64 bg-gradient-to-br from-blue-600 to-purple-700"></div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-2">E-commerce OS</h3>
+                    <p class="text-slate-400 mb-4">Architettura Next.js per scalabilità enterprise.</p>
+                    <span class="text-blue-400 text-sm font-mono">Next.js • PostgreSQL • Tailwind</span>
+                </div>
+            </div>
+            <div class="project-card bg-slate-900 rounded-3xl overflow-hidden border border-slate-800" data-aos="zoom-in" data-aos-delay="100">
+                <div class="h-64 bg-gradient-to-br from-emerald-500 to-blue-600"></div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-2">Fintech Dashboard</h3>
+                    <p class="text-slate-400 mb-4">Analisi dati in real-time con WebSockets.</p>
+                    <span class="text-emerald-400 text-sm font-mono">TypeScript • Node.js • D3.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contatti" class="py-20 text-center border-t border-slate-900">
+        <h2 class="text-3xl font-bold mb-6">Lavoriamo insieme</h2>
+        <p class="text-slate-500 mb-8">Disponibile per consulenze senior e architetture complesse.</p>
+        <a href="mailto:tuo@email.com" class="text-blue-500 underline text-xl">ciao@tuodominio.it</a>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
